@@ -10,9 +10,11 @@
         <!--would recommend using facade to wrap for scalability ensure loose coupling -->
         {% if user.is_authenticated %}
             <span>Hello {{ user.username }}!</span>
-            <span><a href="{% url 'logout' %}">Logout</a></span>
+            {% url 'accounts:logout' as logout_url %}
+            <span><a href="{{ logout_url }}">Logout</a></span>
         {% else %}
-            <span><a href="{% url 'login' %}">Login</a></span>
+            {% url 'accounts:login' as login_url %}
+            <span><a href="{{ login_url }}">Login</a></span>
         {% endif %}
 
     </span>
