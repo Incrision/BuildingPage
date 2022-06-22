@@ -4,9 +4,10 @@
     <head>
         <meta charset="utf-8">
         <!--will use sub templates to extend and override-->
-        <title>{ % block title %} Base Title {% endblock}</title>
+        <title>{% block title %}Base Title{% endblock %}</title>
     </head>
     <body>
+        {% include 'navbar.html' %}
         <main>
             <!--will use sub templates to extend and override-->
             {% block content %}

@@ -1,0 +1,16 @@
+<div>
+    <span><a href="{% url 'index' %}">Home</a></span>
+    <span><a href="{% url 'about' %}">About</a></span>
+    <span><a href="{% url 'contact' %}">Contact</a></span>
+
+    <span style="float:right">
+        <!--would recommend using facade to wrap for scalability ensure loose coupling -->
+        {% if user.is_authenticated %}
+            <span>Hello {{ user.username }}!</span>
+            <span><a href="{% url 'logout' %}">Logout</a></span>
+        {% else %}
+            <span><a href="{% url 'login' %}">Login</a></span>
+        {% endif %}
+
+    </span>
+</div>
