@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--will use sub templates to extend and override-->
+        <title>{ % block title %} Base Title {% endblock}</title>
+    </head>
+    <body>
+        <main>
+            <!--will use sub templates to extend and override-->
+            {% block content %}
+            {% endblock %}
+        </main>
+    </body>
+</html>
