@@ -20,6 +20,7 @@
     </head>
     <body>
         {% include 'navbar.html' %}
+
         <main>
             <!--will use sub templates to extend and override-->
             {% block content %}
@@ -31,5 +32,22 @@
      <!-- Core theme JS-->
      <script src="{% static 'theme/js/scripts.js' %}"></script>
      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+
+     <!-- FOOTER -->
+     <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                        PROPERTY MANAGEMENT COMPANY • 
+                        123 MAIN STREET •
+                        NEW YORK NEW YORK 1000 •
+                        212.555.2121 •
+                        WWW.PROPERTYMANAGEMENTCO.COM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
