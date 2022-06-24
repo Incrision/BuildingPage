@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Index {% endblock %}
+{% block title %} Home {% endblock %}
 
 {% block content %}
 
 <h1>
-    Index Homepage
+    Homepage
 </h1>
-<img class="masthead-avatar mb-5" src="{% static 'images/Building_Arch1.jpg' %}" alt="..." style="width:700px;height:800px;"/>
+
+    <img src="{% static 'images/Building_Arch1.jpg' %}" alt="..." style="width:700px;height:800px;" class="image-fluid"/>
+    <img src="{% static 'images/Building_Arch1.jpg' %}" alt="..." style="width:700px;height:800px;" class="image-fluid"/>
 
 {% endblock %}
